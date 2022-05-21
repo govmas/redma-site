@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="adaptiv.css">
+    <link rel="stylesheet" type="text/css" href="menu-adaptive.css">
+    <link rel="stylesheet" type="text/css" href="main-design.css">
+    <link rel="stylesheet" type="text/css" href="preloader.css">
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+    <style>
+        @font-face {
+            font-family: "Bicubik";
+            src: url(bicubik-regular.svg) format("eot"),
+                url(bicubik-regular.woff) format("woff");
+        }
+    </style>
+    <title>main</title>
+</head>
+
+<body>
+    <div class="preloader">
+        <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="currentColor"
+                d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+            </path>
+        </svg>
+    </div>
+    <header><img src="header.png" class="img" style="background-color: white;" alt="Карта" usemap="#карта">
+        <input type="checkbox" id="menu-mobile" />
+        <nav>
+            <!-- навигация -->
+            <label for="menu-mobile" class="toggle-button" onclick>MENU</label>
+            <ul class="main-menu">
+                <!-- пункты меню -->
+                <li><a href="главная.html">read with us</a></li>
+                <li><a href="новости.html">новости</a></li>
+                <li><a href="каталог.html">каталог</a></li>
+                <li><a href="аккаунт.html">аккаунт</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form style="margin-top: 20px;">
+        <input type="text" placeholder="Поиск манги по названию...">
+        <button type="submit" class="button">&#128269;</button>
+    </form>
+    <map name="карта">
+        <area shape="rect" coords="42,29,198,184" alt="logo" href="главная.html">
+    </map>
+    <div class="shapka">ОБНОВЛЕНИЯ ПОПУЛЯРНОЙ МАНГИ</div>
+    <div class="first">
+        <div class="div1"><a href="about-barren.html" class="pereh"><img src="пустоцвет2.png" class="size-of-img" alt="пустоцвет">Пустоцвет</a></div>
+        <div class="div1"><a href="about-slice.html" class="pereh"><img src="о-моем-перерождении.png" class="size-of-img" alt="reburn">моём
+                перерожд...</a></div>
+        <div class="div1"><a href="about-pumpkin.html" class="pereh"><img src="тыквеннаяночь.jpg" class="size-of-img" alt="тыковка">Тыквенная
+                ночь</a></div>
+        <div class="div1"><a href="about-spiral.html" class="pereh"><img src="спираль.jpg" class="size-of-img" alt="spiral">Спираль</a></div>
+    </div>
+    <div class="shapka2">ПОСЛЕДНИЕ НОВОСТИ</div>
+    <div class="shapka3">ЖАНРЫ</div>
+    <div class="new">
+        <div class="width" style="margin-right: 2%;">
+            <a href="новости.html"><button class="button-width"> новость 1</button></a>
+            <a href="новости.html"><button class="button-width"> новость 2</button></a>
+            <a href="новости.html"><button class="button-width"> новость 3</button></a>
+            <a href="новости.html"><button class="button-width"> новость 4</button></a>
+            <a href="новости.html"><button class="button-width"> новость 5</button></a>
+            <a href="новости.html"><button class="button-width"> новость 6</button></a>
+        </div>
+    </div>
+    <div class="ganre">
+        <div class="butt">
+            <div class="width">
+                <a href="каталог.html"><button class="button-width">АРТ</button></a>
+            <a href="каталог.html"><button class="button-width">Вампиры</button></a>
+            <a href="каталог.html"><button class="button-width">Гарем</button></a>
+            </div>
+            <div class="width">
+                <a href="каталог.html"><button class="button-width">Ужасы</button></a>
+                <a href="каталог.html"><button class="button-width">Детектив</button></a>
+                <a href="каталог.html"><button class="button-width">Меха</button></a>
+            </div>
+            <div class="width">
+                <a href="каталог.html"><button class="button-width">Мистика</button></a>
+                <a href="каталог.html"><button class="button-width">Спорт</button></a>
+                <a href="каталог.html"><button class="button-width">Киберпанк</button></a>
+            </div>
+            <div class="width">
+                <a href="каталог.html"><button class="button-width">Этти</button></a>
+                <a href="каталог.html"><button class="button-width">Трагедия</button></a>
+                <a href="каталог.html"><button class="button-width">Психология</button></a>
+            </div>
+            <div class="width">
+                <a href="каталог.html"><button class="button-width">Романтика</button></a>
+                <a href="каталог.html"><button class="button-width">Сёнэн</button></a>
+                <a href="каталог.html"><button class="button-width">Сёдзё</button></a>
+            </div>
+        </div>
+    </div>
+    <footer><img src="footer.png" class="footer" alt="footer"></footer>
+</body>
+
+</html>

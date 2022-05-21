@@ -1,0 +1,68 @@
+.img {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #c4c4c4;
+}
+
+.title {
+    width: 80%;
+    background-color: #56565656;
+    margin: 5% 10%;
+    height: 530px;
+}
+
+.footer {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    margin-bottom: -5px;
+}
+
+.topNubex {
+    position: fixed;
+    right: 45px;
+    bottom: 45px;
+    color: #791212;
+    text-decoration: none;
+}
+
+p {
+    color: white;
+    font-family: bicubik;
+    margin-left: 38%;
+    margin-top: -480px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid white;
+    text-align: center;
+    width: 55%;
+    font-size: 20px;
+}
+
+.button {
+    margin-left: 38%;
+    border-bottom: 2px solid white;
+    width: 55%;
+    padding-bottom: 30px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.organs {
+    background-color: #302b2b72;
+    width: 55%;
+    height: 240px;
+    margin-left: 38%;
+    margin-top: 30px;
+    color: white;
+    font-family: bicubik;
+    padding: 1%;
+    padding-top: 2%;
+    font-size: 19.5px;
+}
+.adept{
+    width: 30%;
+}

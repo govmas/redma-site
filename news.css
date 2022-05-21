@@ -1,0 +1,29 @@
+.img {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #c4c4c4;
+}
+.div{
+    background-color: #615d5d8c;
+    height:350px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+    text-align: center;
+}
+#info{
+    background-color: #999999;
+    width:90%;
+    margin-left: 5%;
+    margin-bottom:30px;
+}
+.footer {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    margin-bottom: -5px;
+}

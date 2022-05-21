@@ -1,0 +1,112 @@
+/************ Menu ************/
+#menu-mobile {
+    /* чекбокс скрыт */
+    display: none;
+}
+
+.main-menu {
+    /* пункты меню скрыты */
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu li {
+    /* пункты меню расположены вертикально */
+    /* каждый имеет ширину 100% */
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    width: 100%;
+    font-family: 'bicubik';
+}
+
+
+.main-menu a {
+    display: block;
+    border-bottom: 1px solid #791212;
+    color: #791212;
+    font-family: 'bicubik';
+    padding: .5em;
+    text-decoration: none;
+}
+
+.main-menu a:hover {
+    text-decoration: underline;
+}
+
+/*****************************************/
+
+.toggle-button {
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'bicubik';
+    padding: 10px 20px;
+    background: linear-gradient(180deg, #791212 39.58%, rgba(6, 0, 0, 0.99) 100%);
+    color: #ffffff;
+    width: 100%;
+}
+
+#menu-mobile:checked+nav .toggle-button {
+    color: #D48D8D;
+
+}
+
+#menu-mobile:checked+nav .main-menu {
+    /* когда чекбокс активен меню становится видимым */
+    display: block;
+}
+
+@media(max-width: 768px) {
+    .main-menu {
+        width: 100%;
+    }
+
+    .main-menu li {
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    nav {
+        width:100%;
+    }
+}
+
+@media screen and (min-width: 560px) {
+    .toggle-button {
+        /* label скрыт */
+        display: none;
+    }
+
+    .main-menu {
+        display: block;
+        margin: 0 auto;
+        background: linear-gradient(180deg, #791212 39.58%, rgba(6, 0, 0, 0.99) 100%);
+        height: 60px;
+    }
+
+    .main-menu li {
+        /* теги <li> расположены в ряд */
+        width: calc(100%/4);
+        text-align: center;
+        display: inline-block;
+        margin-right: -4px;
+        padding-top: 10px;
+    }
+
+    .main-menu a {
+        display: inline-block;
+        margin-right: -4px;
+        font-size: 18px;
+        font-weight: 700;
+        text-decoration: none;
+        color: white;
+        text-transform: capitalize;
+        border-bottom: 0;
+        border-radius: 10px;
+        border-bottom-width: 560px;
+    }
+}

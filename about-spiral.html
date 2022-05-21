@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        @import url(about-page.css) screen and (min-width: 1360px) and (orientation: landscape);
+        @import url(about-page1.css) screen and (min-width: 992px) and (max-width: 1360px) and (orientation: landscape);
+        @import url(about-page2.css) screen and (min-width: 300px) and (max-width: 768px) and (orientation: portrait);
+        @import url(about-page4.css) screen and (min-width: 768px) and (max-width: 1280px) and (orientation: portrait);
+        @import url(about-page3.css) screen and (min-width: 300px) and (max-width: 1000px) and (orientation: landscape);
+        a{
+            text-decoration: none;
+            font-family: bicubik;
+        }
+        a:visited{
+            color:white;
+            font-family: bicubik;
+            text-decoration: none;
+        }
+         @font-face {font-family: "Bicubik";
+        src: url(bicubik-regular.svg) format("eot"), 
+             url(bicubik-regular.woff) format("woff");
+             }
+    </style>
+</head>
+<body style="margin: 0px; background-color: #939191">
+    <header id="about-topbar" type="toolbar">
+        <div id="logo-topbar"><a href="главная.html">READMA</a></div>
+        <a id="user" href="аккаунт.html"><img src="user.svg"> </a>      
+
+    </header>
+    <div id="spiral"></div>
+    <div id="about-page-label">
+        <div id="about-page-text">Спираль</div>
+    </div>
+    <div id="spiral-img"></div>
+    <div id="start-reading">
+        НАЧАТЬ ЧИТАТЬ
+    </div>
+    <div id="about-page-description">
+        Курозу — маленький японский городок. По словам Сюити Сайто, друга главной героини Кириэ Госимы, этот город проклят спиралями. Они видны повсюду — как в растениях или урагане, так и в людях. Отца Сюити одолевает навязчивая идея, и постепенно каждый житель города погружается в водоворот событий, из которого невозможно вернуться...
+    </div>
+    <menu id="about-page-options">
+        <div id="red-edging">
+            <div class="options">
+                <p>Главы</p>
+            </div>
+            <div class="options-comms">
+                <p>Комментарии</p>
+            </div>
+            <div class="options">
+                <p>Подробное описание</p>
+            </div>
+            <div class="options-genrs">
+                <p>Схожие по жанрам</p>
+            </div>
+        </div>
+
+        <div>
+            <div id="chapter">
+                Глава 6
+            </div>
+            <div id="chapter">
+                Глава 5
+            </div>
+            <div id="chapter">
+                Глава 4
+            </div>
+            <div id="chapter">
+                Глава 3
+            </div>
+            <div id="chapter">
+                Глава 2
+            </div>
+            <div id="chapter">
+                Глава 1
+            </div>
+        </div>
+    </menu>
+    <footer id="about-page-footer"></footer>
+</body>
+</html>
