@@ -11,6 +11,10 @@ $width5:560px;
 
 body {
 	background-color: $var1;
+	.img {
+	position: relative;
+	background-color: $var4;
+}
 }
 #logo {
 	position: relative;
@@ -33,7 +37,7 @@ form {
 input, .button {
 	margin-top: -5px;
 	outline: none;
-	background: white;
+	background: $var4;
 }
 input {
 	width: 100%;
@@ -63,10 +67,6 @@ input {
 }
 .butt {
 	width: 98%;
-}
-.img {
-	position: relative;
-	background-color: white;
 }
 .div1 {
 	display: inline-block;
@@ -110,7 +110,7 @@ input {
 	border: 1px solid $var3;
 	border-bottom: 5px solid $var3;
 	box-sizing: border-box;
-	color: white;
+	color: $var4;
 	text-align: center;
 	padding-top: 18px;
 	font-family: 'bicubik';
@@ -125,7 +125,7 @@ input {
 		border: 1px solid $var3;
 		border-bottom: 5px solid $var3;
 		box-sizing: border-box;
-		color: white;
+		color: $var4;
 		text-align: center;
 		padding-top: 18px;
 		font-family: 'bicubik';
@@ -139,7 +139,7 @@ input {
 		border: 1px solid $var3;
 		border-bottom: 5px solid $var3;
 		box-sizing: border-box;
-		color: white;
+		color: $var4;
 		text-align: center;
 		padding-top: 18px;
 		font-family: 'bicubik';
@@ -187,7 +187,7 @@ input {
 }
 button {
 	background-color: $var1;
-	border: 1px solid white;
+	border: 1px solid $var4;
 	height: 60px;
 	margin-top: 11px;
 	margin-left: 2.5%;
@@ -196,7 +196,7 @@ a {
 	text-decoration: none;
 }
 .pereh:visited {
-	color: black;
+	color: $var3;
 }
 .width {
 	display: flex;
