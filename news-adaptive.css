@@ -23,4 +23,7 @@
     nav{
        width: 90%;
     }
+    li  a {
+margin-left: 13%;
+}
 }
