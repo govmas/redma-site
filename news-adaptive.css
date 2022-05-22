@@ -24,6 +24,9 @@
        width: 90%;
     }
     li  a {
-margin-left: 13%;
-}
+        margin-left: 13%;
+        }
+   .img{
+            width: 103%;
+        }
 }
