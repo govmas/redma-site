@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="news.css">
     <link rel="stylesheet" type="text/css" href="menu-adaptive.css">
+     <link rel="stylesheet" type="text/css" href="news-adaptive.css">
     <title>Новости</title>
     <style>
         @font-face {
@@ -30,12 +31,37 @@
             </ul>
         </nav>
     </header>
-    <div id="info">
-        <div class="div">новость 1</div>
-        <div class="div">новость 2</div>
-        <div class="div">новость 3</div>
-        <div class="div">новость 4</div>
+   <div id="info">
+        <div class="div"><p>новость 1</p>
+            <div id="name"></div>
+            <div id="news"></div>
+            <div id="date"></div>
+        </div>
+        <div class="div"><p>новость 2</p>
+            <div id="name">Англоязычные актеры озвучки "Атаки титанов" не знают, чем закончится шоу</div>
+            <div id="news">Спустя почти десять лет, "Атака титанов" подходит к концу и для поклонников, которые не читали мангу, это эмоциональная развязка. Но сейчас даже англоязычные актеры озвучки не в курсе того, что станет с их персонажами, которых...</div>
+            <div id="date">17.02.22</div>
+        </div>
+        <div class="div"><p>новость 3</p>
+            <div id="name">Among Us станет мангой</div>
+            <div id="news">Manga Mogura RE опубликовала в Twitter информацию о том, что игра Among Us получит манга-адаптацию. Выйдет эта версия 4 февраля в японской антологии Bessatsu CoroCoro. Итак, кто лучшая девочка: розовая или зеленая? Будет ли красный...</div>
+            <div id="date">13.01.22</div>
+        </div>
     </div>
+    <script>
+        txt = "<info>";
+        txt += "<name>По мотивам Watch Dogs вышла манга про японских хакеров</name>";
+        txt += "<news>Ubisoft продолжает расширять свои игровые франшизы с помощью книг и комиксов. На этот раз студия заключила соглашение с японским издательством Kurage Bunch. Результатом сотрудничества стала первая манга по мотивам Watch Dogs. Манга получила название Watch...</news>";
+        txt += "<date>12.04.22</date>";
+        txt += "</info>";
+        if (window.DOMParser) {
+        parser = new DOMParser();
+        xmlDoc = parser.parseFromString(txt, "text/xml");
+        }
+        document.getElementById("name").innerHTML = xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+        document.getElementById("news").innerHTML = xmlDoc.getElementsByTagName("news")[0].childNodes[0].nodeValue;
+        document.getElementById("date").innerHTML = xmlDoc.getElementsByTagName("date")[0].childNodes[0].nodeValue;
+     </script>  
     <footer><img src="footer.png" class="footer" alt="footer"></footer>
 </body>
 
